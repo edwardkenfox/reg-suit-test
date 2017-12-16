@@ -9,9 +9,13 @@ async function main() {
 
   page.setViewport({ width: 1280, height: 1080 });
   // await page.goto(`file://${__dirname}/index.html`);
-  await page.goto(`https://staging.repro.io/tool/in_app_message/`);
+  await page.goto(`https://staging.repro.io/tool/push_notification/`);
   await new Promise(res => setTimeout(() => res(), 300));
   await page.screenshot({ path: 'screenshot/index.png' });
+
+  await page.goto(`https://staging.repro.io/tool/in_app_message/`);
+  await new Promise(res => setTimeout(() => res(), 300));
+  await page.screenshot({ path: 'screenshot/index2.png' });
 
   await page.close();
   await browser.close();
