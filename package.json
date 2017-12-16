@@ -1,0 +1,21 @@
+{
+  "name": "reg-suit-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "capture.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mkdirp": "^0.5.1",
+    "puppeteer": "^0.13.0",
+    "reg-keygen-git-hash-plugin": "^0.6.3",
+    "reg-notify-github-plugin": "^0.6.3",
+    "reg-publish-s3-plugin": "^0.6.3"
+  },
+  "dependencies": {
+    "reg-suit": "^0.6.3"
+  }
+}
